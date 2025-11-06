@@ -183,4 +183,273 @@
       margin-top: 22px;
     }
     .certs-btn:hover {
-      transform: translateY
+      transform: translateY(-4px);
+      box-shadow: 0 14px 34px rgba(0,123,255,0.42);
+      background: #0056b3;
+    }
+    .certs-btn i { font-size: 1.5rem; }
+
+    .contact-form {
+      max-width: 620px; margin: 0 auto;
+      background: var(--card); padding: 34px; border-radius: 14px;
+      box-shadow: 0 6px 22px rgba(0,0,0,0.1); border: 1px solid var(--border);
+    }
+    .form-group { margin-bottom: 22px; }
+    label { display: block; margin-bottom: 9px; font-weight: 600; }
+    input, textarea {
+      width: 100%; padding: 14px; border: 1px solid var(--border);
+      border-radius: 10px; background: var(--bg); color: var(--text);
+      font-family: inherit; transition: 0.3s;
+    }
+    input:focus, textarea:focus {
+      outline: none; border-color: var(--primary); box-shadow: 0 0 0 3px rgba(0,123,255,0.22);
+    }
+    button {
+      background: var(--primary); color: white; border: none;
+      padding: 14px 32px; border-radius: 10px; font-weight: 600;
+      cursor: pointer; transition: 0.3s; font-size: 1.05rem;
+    }
+    button:hover { background: #0056b3; transform: translateY(-2px); }
+
+    .theme-toggle {
+      position: fixed; bottom: 24px; right: 24px; z-index: 1000;
+      background: var(--card); width: 54px; height: 54px;
+      border-radius: 50%; display: flex; align-items: center;
+      justify-content: center; font-size: 1.5rem; cursor: pointer;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.2); border: 1px solid var(--border);
+      transition: 0.3s;
+    }
+    .theme-toggle:hover { transform: scale(1.12); }
+
+    footer {
+      text-align: center; padding: 45px 20px; background: var(--card);
+      border-top: 1px solid var(--border); color: #666; font-size: 0.95rem;
+    }
+
+    @media (max-width: 768px) {
+      .timeline::before { left: 20px; }
+      .timeline-item { width: 100%; padding-left: 50px; padding-right: 0; left: 0 !important; text-align: left !important; }
+      .timeline-item::before { left: 12px !important; }
+      .timeline-item:nth-child(odd) { padding-right: 0; }
+      header h1 { font-size: 2.3rem; }
+      .profile-img { width: 130px; height: 130px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <img src="profile.jpg" alt="Sandeep S S" class="profile-img">
+      <h1>Sandeep S S</h1>
+      <p>sandeepsatheesh278@gmail.com — +91 8220896478 — Chennai, India</p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/sandeep-ss-6b169633a/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/Sandeepsatheesh27" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="container">
+      <ul>
+        <li><a href="#objective">Objective</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Career Objective -->
+  <section id="objective">
+    <div class="container">
+      <h2>Career Objective</h2>
+      <p class="about">
+        Highly motivated and detail-oriented Computer Science graduate with a strong foundation in cloud computing, DevOps, and software development. Passionate about leveraging expertise in Microsoft Azure, AWS, and Python to design, implement, and optimize scalable solutions. Committed to continuous learning, adapting to emerging technologies, and contributing to impactful, innovative projects in a dynamic work environment.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <i class="fas fa-cloud"></i>
+          <h3>Cloud Platforms</h3>
+          <p>Microsoft Azure (Fundamentals)<br>AWS (Cloud Practitioner)</p>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-code-branch"></i>
+          <h3>DevOps</h3>
+          <p>Azure DevOps Basics<br>CI/CD Pipelines</p>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-laptop-code"></i>
+          <h3>Programming</h3>
+          <p>Python<br>Basic Scripting<br><strong>SQL</strong></p>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-tools"></i>
+          <h3>Other</h3>
+          <p>Git/GitHub<br>Docker Fundamentals</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education">
+    <div class="container">
+      <h2>Education</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>B.E. in Computer Science and Engineering</h3>
+            <div class="date">May 2025</div>
+            <p><strong>Saveetha School of Engineering, Chennai</strong><br>CGPA: 7.9/10</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Internship Experience -->
+  <section id="experience">
+    <div class="container">
+      <h2>Internship Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>Cloud Intern — Tech Octant, Chennai</h3>
+            <div class="date">Apr 2025 – Jul 2025</div>
+            <p>Gained hands-on experience in Microsoft Azure fundamentals including resource creation, virtual networks, storage management, and monitoring solutions. Collaborated with senior engineers to set up virtual machines, configure access control, and implement cost optimization strategies. Prepared technical documentation and contributed to internal best practices.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-img"><i class="fas fa-globe"></i></div>
+          <div class="project-info">
+            <h3>Static Website Deployment on Azure</h3>
+            <p>Developed and deployed a static HTML/CSS website using Azure Virtual Machine. Configured storage account, container, uploaded files, and enabled hosting. Key skills: Azure Virtual Machine, Static Hosting.</p>
+            <div class="tags">
+              <span class="tag">Azure VM</span>
+              <span class="tag">Static Hosting</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-img"><i class="fas fa-cogs"></i></div>
+          <div class="project-info">
+            <h3>Basic CI/CD Pipeline with Azure DevOps</h3>
+            <p>Designed a simple CI/CD pipeline to build and deploy a sample application. Configured build and release pipeline with GitHub integration. Learned YAML pipeline structure. Key skills: Azure DevOps, GitHub, CI/CD, YAML.</p>
+            <div class="tags">
+              <span class="tag">Azure DevOps</span>
+              <span class="tag">CI/CD</span>
+              <span class="tag">YAML</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section id="certifications">
+    <div class="container">
+      <h2>Certifications</h2>
+      <div class="certs-center">
+        <p style="margin-bottom: 20px; color: #555; line-height: 1.8;">
+          All 10 certificates in one secure Google Drive folder:<br>
+          <strong>AWS, Oracle AI, Python, SQL, Power BI, Cyber Security, and more.</strong>
+        </p>
+        <a href="https://drive.google.com/drive/folders/1ay7yVZi8PmPby0NpE7tNZ3_2YULhQlNw?usp=sharing" 
+           target="_blank" class="certs-btn">
+          <i class="fas fa-folder-open"></i> Open All Certificates
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form class="contact-form" action="https://formspree.io/f/mgvpgzvp" method="POST">
+        <div class="form-group">
+          <label>Your Name</label>
+          <input type="text" name="name" required />
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" name="_replyto" required />
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Theme Toggle -->
+  <div class="theme-toggle" onclick="toggleTheme()">
+    <i class="fas fa-moon" id="theme-icon"></i>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Sandeep S S. Built with HTML, CSS & GitHub Pages.</p>
+  </footer>
+
+  <script>
+    const toggleTheme = () => {
+      const body = document.body;
+      const icon = document.getElementById('theme-icon');
+      if (body.getAttribute('data-theme') === 'dark') {
+        body.removeAttribute('data-theme');
+        icon.classList.replace('fa-sun', 'fa-moon');
+        localStorage.setItem('theme', 'light');
+      } else {
+        body.setAttribute('data-theme', 'dark');
+        icon.classList.replace('fa-moon', 'fa-sun');
+        localStorage.setItem('theme', 'dark');
+      }
+    };
+
+    window.onload = () => {
+      const savedTheme = localStorage.getItem('theme');
+      const icon = document.getElementById('theme-icon');
+      if (savedTheme === 'dark') {
+        document.body.setAttribute('data-theme', 'dark');
+        icon.classList.replace('fa-moon', 'fa-sun');
+      }
+    };
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>

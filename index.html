@@ -62,6 +62,31 @@
     }
     .social-links a:hover { transform: translateY(-3px); }
 
+    /* Resume Button */
+    .resume-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(255,255,255,0.2);
+      color: white;
+      padding: 12px 24px;
+      border-radius: 50px;
+      font-size: 1rem;
+      font-weight: 600;
+      text-decoration: none;
+      margin-top: 20px;
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,0.3);
+      transition: 0.3s;
+    }
+    .resume-btn:hover {
+      background: white;
+      color: #007bff;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+    .resume-btn i { font-size: 1.3rem; }
+
     /* Nav */
     nav {
       background: var(--nav-bg);
@@ -248,6 +273,10 @@
         <a href="https://www.linkedin.com/in/sandeep-ss-6b169633a/" target="_blank"><i class="fab fa-linkedin"></i></a>
         <a href="https://github.com/Sandeepsatheesh27" target="_blank"><i class="fab fa-github"></i></a>
       </div>
+      <!-- RESUME BUTTON -->
+      <a href="resume.pdf" target="_blank" class="resume-btn">
+        <i class="fas fa-file-pdf"></i> Click to View Resume
+      </a>
     </div>
   </header>
 
